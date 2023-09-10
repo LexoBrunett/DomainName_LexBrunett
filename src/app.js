@@ -22,5 +22,11 @@ window.onload = function() {
     let number = Math.floor(Math.random() * arrayLength);
     return number;
   }
-  console.log(domain);
+
+let domainNames = [];
+
+pronoun.forEach((a1) => adj.forEach((a2) => noun.forEach((a3) => domainNames.push(a1 + a2 + a3 + ".com"))));
+
+console.log(domainNames);
+
 };
